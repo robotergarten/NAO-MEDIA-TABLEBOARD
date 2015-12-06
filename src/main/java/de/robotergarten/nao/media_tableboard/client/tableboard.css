@@ -1,0 +1,273 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+}
+
+.bgPanel {
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+}
+
+.photopanelui img, .videopanelui video {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.centered {
+	color: #FFFFFF;
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	z-index: 100;
+	height: 400px;
+	margin-top: -190px;
+	width: 950px;
+	margin-left: -370px;
+}
+
+.textPanelId {
+	background-color: #000000;
+	color: #FFFFFF;
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	margin-top: -200px;
+	margin-left: -500px;	
+}
+
+.wordButton {
+	background-color: #2a9c32;
+	padding: 10px;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: x-large;
+	text-decoration: none;
+	text-shadow: 1px 1px #333333;
+	color: #fff;
+	background: #81d1a1;
+	background-image: -webkit-linear-gradient(top, #7CB72C, #395C09);
+	background-image: -moz-linear-gradient(top, #7CB72C, #395C09);
+	background-image: -ms-linear-gradient(top, #7CB72C, #395C09);
+	background-image: -o-linear-gradient(top, #7CB72C, #395C09);
+	background-image: linear-gradient(to bottom, #7CB72C, #395C09);
+	-webkit-box-shadow: inset 0px 1px 0px #9AF563, 0px 6px 0px #234306;
+	-moz-box-shadow: inset 0px 1px 0px #9AF563, 0px 6px 0px #234306;
+	-o-box-shadow: inset 0px 1px 0px #9AF563, 0px 6px 0px #234306;
+	box-shadow: inset 0px 1px 0px #9AF563, 0px 6px 0px #234306;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-o-border-radius: 18px;
+	border-radius: 18px;
+	margin: 6px;
+	padding: 5px 15px;
+}
+
+.wordButton::before {
+	/* 	background-color:#072239; */
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	left: -2px;
+	top: 5px;
+	z-index: -1;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.wordButton:active {
+	color: #2D4D1C;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+	background: #799355;
+	background-image: -webkit-linear-gradient(top, #395C09, #7CB72C);
+	background-image: -moz-linear-gradient(top, #395C09, #7CB72C);
+	background-image: -ms-linear-gradient(top, #395C09, #7CB72C);
+	background-image: -o-linear-gradient(top, #395C09, #7CB72C);
+	background-image: linear-gradient(to bottom, #395C09, #7CB72C);
+	-webkit-box-shadow: inset 0px 1px 0px #2a9c32, inset 0px -1px 0px
+		#81d1a1;
+	-moz-box-shadow: inset 0px 1px 0px #2a9c32, inset 0px -1px 0px #81d1a1;
+	-o-box-shadow: inset 0px 1px 0px #2a9c32, inset 0px -1px 0px #81d1a1;
+	box-shadow: inset 0px 1px 0px #2a9c32, inset 0px -1px 0px #81d1a1;
+	top: 7px;
+}
+
+.wordButton:active::before {
+	top: -2px;
+}
+
+.saveButton {
+	width: 200px;
+	padding: 10px;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: xx-large;
+	text-decoration: none;
+	text-shadow: 1px 1px #333333;
+	color: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F9CC65
+		), color-stop(1, #706013));
+	background: -moz-linear-gradient(center top, #F9CC65 5%, #706013 100%)
+		repeat scroll 0 0 #817919;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9CC65',
+		endColorstr='#706013');
+	background-color: #706013;
+	-webkit-box-shadow: inset 0px 1px 0px #F9CC65, inset 0px -1px 0px
+		#706013;
+	-moz-box-shadow: inset 0px 1px 0px #F9CC65, inset 0px -1px 0px #706013;
+	-o-box-shadow: inset 0px 1px 0px #F9CC65, inset 0px -1px 0px #706013;
+	box-shadow: inset 0px 1px 0px #F9CC65, inset 0px -1px 0px #706013;
+	-webkit-border-radius: 18px ! important;
+	-moz-border-radius: 18px ! important;
+	-o-border-radius: 18px ! important;
+	border-radius: 18px ! important;
+}
+
+.saveButton::before {
+	width: 200px;
+	background-color: #44360B;
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	left: -4px;
+	top: 4px;
+	z-index: -1;
+	-webkit-box-shadow: 0px 1px 0px #FFFFFF;
+	-moz-box-shadow: 0px 1px 0px #FFFFFF;
+	-o-box-shadow: 0px 1px 0px #FFFFFF;
+	box-shadow: 0px 1px 0px #FFFFFF;
+}
+
+.saveButton:active {
+	color: #F9CC65;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+	background: #706013;
+	-webkit-box-shadow: inset 0px 1px 0px #706013, inset 0px -1px 0px
+		#F9CC65;
+	-moz-box-shadow: inset 0px 1px 0px #706013, inset 0px -1px 0px #F9CC65;
+	-o-box-shadow: inset 0px 1px 0px #706013, inset 0px -1px 0px #F9CC65;
+	box-shadow: inset 0px 1px 0px #706013, inset 0px -1px 0px #F9CC65;
+	top: 7px;
+}
+
+.deleteButton {
+	width: 200px;
+	padding: 10px;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: xx-large;
+	text-decoration: none;
+	text-shadow: 1px 1px #333333;
+	color: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #E04300
+		), color-stop(1, #3C1C00));
+	background: -moz-linear-gradient(center top, #E04300 5%, #706013 100%)
+		repeat scroll 0 0 #3C1C00;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E04300',
+		endColorstr='#3C1C00');
+	background-color: #3C1C00;
+	-webkit-box-shadow: inset 0px 1px 0px #E04300, inset 0px -1px 0px
+		#3C1C00;
+	-moz-box-shadow: inset 0px 1px 0px #E04300, inset 0px -1px 0px #3C1C00;
+	-o-box-shadow: inset 0px 1px 0px #E04300, inset 0px -1px 0px #3C1C00;
+	box-shadow: inset 0px 1px 0px #E04300, inset 0px -1px 0px #3C1C00;
+	-webkit-border-radius: 18px ! important;
+	-moz-border-radius: 18px ! important;
+	-o-border-radius: 18px ! important;
+	border-radius: 18px ! important;
+}
+
+.deleteButton::before {
+	width: 200px;
+	background-color: #673B0A;
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	left: -4px;
+	top: 4px;
+	z-index: -1;
+	-webkit-box-shadow: 0px 1px 0px #FFFFFF;
+	-moz-box-shadow: 0px 1px 0px #FFFFFF;
+	-o-box-shadow: 0px 1px 0px #FFFFFF;
+	box-shadow: 0px 1px 0px #FFFFFF;
+}
+
+.deleteButton:active {
+	color: #F9CC65;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+	background: #3C1C00;
+	-webkit-box-shadow: inset 0px 1px 0px #3C1C00, inset 0px -1px 0px
+		#E04300;
+	-moz-box-shadow: inset 0px 1px 0px #3C1C00, inset 0px -1px 0px #E04300;
+	-o-box-shadow: inset 0px 1px 0px #3C1C00, inset 0px -1px 0px #E04300;
+	box-shadow: inset 0px 1px 0px #3C1C00, inset 0px -1px 0px #E04300;
+	top: 7px;
+}
+
+.saveButton:active::before,.deleteButton:active::before {
+	top: -2px;
+}
+
+.numberButton {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.characterButton,.numberButton {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: xx-large;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: none;
+	border-style: none;
+}
+
+.headerId {
+	border-color: #FFFFFF;
+	border-radius: 10px 10px 10px 10px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px #333333;
+	font-size: x-large;
+	margin: 0px 0px 10px 0px;
+	padding: 12px;
+	width: 95%;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F9CC65
+		), color-stop(1, #706013));
+	background: -moz-linear-gradient(center top, #F9CC65 5%, #706013 100%)
+		repeat scroll 0 0 #817919;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9CC65',
+		endColorstr='#706013');
+	background-color: #706013;
+}
+
+.panelButton {
+	margin: auto;
+}
+
+.interactionButtonPanel {
+	margin: 20px auto auto auto;
+}
+
+.contentPanel {
+	min-height: 200px;
+}

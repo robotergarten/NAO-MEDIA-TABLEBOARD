@@ -1,0 +1,41 @@
+This project aims to offer an extra support for media content to your native NAO applications. It builds a Java Web Application that allows our NAO Robot to broadcast media content (text, video, images) directly to web client browsers.
+
+http://youtu.be/N4fievQ-Z4o
+
+
+Architecture
+ 
+NAO performs requests via REST Services exchanging data in JSON format to the Java application. Server-side, this Java web application uses the reference implementation from Oracle for REST services (jersey), and the WebSockets technology implemented with the Atmosphere framework, in order to stream all kind of HTML5 multimedia content to web browsers.
+ 
+ 
+Installation
+ 
+Prerequisites needed in NAO:
+After install the requests.api library locally in our NAO
+ 
+curl -OL https://github.com/kennethreitz/requests/tarball/master (downloads source code in a tar file)
+tar -zxvf master
+cd new_folder; sudo python setup.py install 
+ 
+we will be able to perform requests from our Python code to the REST services published in the Tomcat server where the Web app is deployed.
+ 
+ 
+Prerequisites in your server
+Java JDK should be installed, maven and also Tomcat (tested with Tomcat 7.0.26, Java JDK 1.7.0_51/1.6 and maven 2.2.1)
+ 
+ 
+Test the application
+If you do not want to compile this project before test it, a compiled WAR file is delivered in the repository, in order to test all functionalities. Just open this file with a unzip application, set your own properties in the app.properties file located in the WEB-INF/classes folder, and deploy it in Tomcat. You have just to set the path where all your media content (images/videos) is located. Anyway if this property is not set, all media files located within the war file, in the webapp folder, could be streamed as an example.
+ 
+ 
+Building the java application
+Clone the project's repo in your local workspace, set your own properties in the app.properties file, add your media files and build the whole project with maven.
+ 
+mvn clean
+mvn install
+ 
+After resolve all needed dependencies, a war file is build in the 'target' folder, that it should be deployable in your Tomcat server.
+ 
+This is the default path to the web app:
+ 
+http://localhost:8080/nao-media-tableboard-1.0.0/
